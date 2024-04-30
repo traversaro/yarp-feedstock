@@ -16,7 +16,7 @@ source:
     - 3097.patch
 
 build:
-  number: 2
+  number: 3
 
 outputs:
   - name: {{ namecxx }}
@@ -90,7 +90,7 @@ outputs:
       build:
         - {{ compiler('c') }}
         - {{ compiler('cxx') }}
-        - swig 4.1.1
+        - swig
         - ninja
         - cmake
         - python                                 # [build_platform != target_platform]
